@@ -386,14 +386,14 @@ body {
   align-items: center; }
 
 .logo {
-  font-family: FuturaDemi;
+  font-family: Futura Demi;
   font-weight: 500;
   line-height: 16px;
   color: #E3B873;
   text-transform: uppercase; }
 
 .nav__item {
-  font-family: FuturaBook;
+  font-family: Futura Book;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
