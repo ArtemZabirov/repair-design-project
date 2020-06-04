@@ -566,7 +566,9 @@ body {
     display: block;
     max-width: 25.86rem;
     width: 100%;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .section-title {
+    font-size: 1.040rem; } }
 
 @media screen and (max-height: 550px) {
   .hero__scroll-down {
