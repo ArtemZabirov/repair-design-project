@@ -392,8 +392,7 @@ img {
     font-size: 1.428rem;
     line-height: 1.92rem;
     text-transform: none;
-    margin-top: 1.2rem;
-    margin-bottom: 3.5rem; }
+    margin-top: 1.2rem; }
 
 .header {
   position: fixed;
@@ -583,7 +582,7 @@ img {
   position: absolute;
   left: 0;
   width: 228px;
-  bottom: -1.79rem;
+  bottom: -2.1rem;
   font-size: 1.29rem;
   line-height: 1.785rem;
   font-family: 'Yeseva One', cursive;
@@ -611,8 +610,10 @@ img {
 
 .card__image {
   display: block;
-  max-height: 30.07rem;
-  margin-top: 3rem; }
+  max-height: 30.07rem; }
+
+.card__title {
+  margin-bottom: 1rem; }
 
 .card__text {
   position: relative;
@@ -626,13 +627,13 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
   margin-top: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.4rem; }
 
 .card__list {
   padding: 0 0 0 1rem;
   margin: 0;
   font-size: 1.07rem;
-  line-height: 1.79rem;
+  line-height: 1.8rem;
   color: #959595;
   margin-bottom: 2rem; }
 
@@ -664,7 +665,7 @@ img {
     padding: 0.7rem 2.4rem; }
   .card__list {
     font-size: 0.92rem;
-    line-height: 1.5rem; } }
+    line-height: 1rem; } }
 
 @media screen and (max-width: 1360px) {
   html {
