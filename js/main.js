@@ -43,9 +43,12 @@ $(document).ready(function () {
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
+  var bullet = $('.swiper-pagination-bullet')
 
   next.css('left', prev.width() + 35 + bullets.width() + 35)
-  bullets.css('left', prev.width() + 35 )
+  bullets.css('left', prev.width() + 20)
+  bullet.css({'margin': '0 8px'}) 
+  
 
   var mySwiper = new Swiper('.swiper-container', {
     spaceBetween: 2
