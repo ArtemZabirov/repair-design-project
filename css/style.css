@@ -534,6 +534,7 @@ img {
   justify-content: center;
   flex-direction: column;
   padding-top: 100px;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
   .hero::before {
