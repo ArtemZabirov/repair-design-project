@@ -265,7 +265,7 @@
       position: relative
       left: 50%
       transform: translate(-50%, 0)
-      top: 45px
+      top: 40px
       margin-right: 0
   .section-title
     &__heading
@@ -278,13 +278,17 @@
     &__play 
       width: 4.64rem
       height: 4.64rem
-@media screen and ( max-width: 370px )
+@media screen and ( max-width: 375px )
   .control
     &__policy-label
-      font-size: 0.9rem
+      justify-content: left
 @media screen and ( max-width: 320px )
   .hero
     padding: 0
+  .control
+    &__policy-label
+      justify-content: left
+      font-size: 0.9rem
   .button
     &--outline
       margin-bottom: 0
