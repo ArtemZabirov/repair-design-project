@@ -235,9 +235,11 @@
       margin-top: 2.8rem
       
     &__text
+      position: relative
+      font-style: normal
+      font-weight: normal
       color: $light
-      max-width: 24.2rem
-      width: 100%
+      width: 345px
       font-size: 1rem
       line-height: 1.75rem
       margin-top: -2.8rem
@@ -280,6 +282,13 @@
     &__play 
       width: 4.64rem
       height: 4.64rem
+@media screen and ( max-width: 370px )
+  .control
+    background-color: $dark
+    &__text
+      max-width: 345px
+      width: 100% 
+
 @media screen and ( max-width: 375px )
   .control
     &__policy-label
