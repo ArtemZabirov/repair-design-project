@@ -431,7 +431,7 @@ img {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
-    font-size: 1.55rem;
+    font-size: 1.45rem;
     line-height: 2rem; }
   .section-title--left {
     text-align: left; }
@@ -708,7 +708,7 @@ img {
   position: relative;
   display: flex;
   margin: auto;
-  margin-bottom: 4.428rem;
+  margin-bottom: 4.828rem;
   max-width: 58.357rem;
   min-height: 31rem;
   background: #131313 url("../img/video-mask.jpg") center no-repeat;
@@ -721,7 +721,7 @@ img {
     background-color: rgba(0, 0, 0, 0.8); }
 
 .control__text {
-  max-width: 40.785rem;
+  max-width: 39.785rem;
   margin: auto;
   margin-top: -0.5rem;
   margin-bottom: 4.285rem;
@@ -730,12 +730,12 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 1.428rem;
-  line-height: 2.42rem; }
+  line-height: 2.45rem; }
   .control__text::before {
     content: '';
     display: block;
     margin: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     width: 55px;
     height: 2px;
     background-color: #E3B873;
@@ -764,7 +764,7 @@ img {
   line-height: 1.71rem; }
 
 .control__button {
-  padding: 1.1857rem 4.1rem;
+  padding: 1.1857rem 3.8rem;
   margin-right: 0.4rem;
   font-family: Futura Demi;
   font-style: normal;
@@ -776,7 +776,8 @@ img {
   flex-basis: 100%;
   margin-top: 1.2rem; }
   .control__policy-label {
-    justify-content: center; }
+    justify-content: center;
+    margin-right: 4.7rem; }
 
 .video__play {
   position: relative;
@@ -1052,6 +1053,8 @@ img {
     max-width: 20.4rem;
     line-height: 1.5rem;
     margin-bottom: 0; }
+  .section-title__heading {
+    font-size: 1.55rem; }
   .card__image {
     margin-top: 0.9rem; }
   .card__pricetag {
