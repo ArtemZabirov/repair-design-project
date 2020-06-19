@@ -397,6 +397,14 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+label.invalid {
+  position: absolute;
+  color: tomato;
+  margin-top: 3.714rem; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -1004,9 +1012,11 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.25rem; }
-    .modal__input:last-of-type {
+    .modal__input-group:last-of-type {
       margin-bottom: -0.2rem; }
   .modal__policy {
     margin-bottom: 2.9rem; }
