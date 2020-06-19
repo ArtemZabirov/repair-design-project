@@ -1087,7 +1087,8 @@ img {
       -moz-text-align-last: left;
       text-align-last: left;
       letter-spacing: -0.07rem;
-      margin-bottom: 1.9rem; }
+      margin-bottom: 1.9rem;
+      margin-top: 2rem; }
     .section-title__word::after {
       display: none; }
     .section-title__text {
@@ -1185,18 +1186,17 @@ img {
       .control__text::before {
         margin-bottom: 1rem; }
     .control__input {
-      margin-bottom: 4.3rem; }
+      margin-bottom: 4.3rem;
+      color: #ffffff; }
     .control__form {
       justify-content: space-arround;
       color: rgba(255, 255, 255, 0.5); }
     .control__input-group {
       flex-basis: 100%; }
     .control__policy-label {
+      margin-right: 0;
       margin-top: -4.3rem;
-      justify-content: left;
       position: relative;
-      left: 50%;
-      transform: translate(-50%, 0);
       top: -60px;
       color: #fff; }
     .control__button {
@@ -1225,6 +1225,10 @@ img {
     font-size: 0.9rem; } }
 
 @media screen and (max-width: 320px) {
+  .hero {
+    padding: 0; }
+  .button--outline {
+    margin-bottom: 0; }
   .header {
     position: relative; }
   .control__text {

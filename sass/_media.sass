@@ -136,6 +136,7 @@
         text-align-last: left
         letter-spacing: -0.07rem
         margin-bottom: 1.9rem 
+        margin-top: 2rem
       &__word
         &::after
           display: none 
@@ -243,17 +244,16 @@
         margin-bottom: 1rem
     &__input
       margin-bottom: 4.3rem
+      color: #ffffff
     &__form
       justify-content: space-arround
       color: rgba(255, 255, 255, 0.5)
     &__input-group
       flex-basis: 100%
     &__policy-label
+      margin-right: 0
       margin-top: -4.3rem
-      justify-content: left
       position: relative
-      left: 50%
-      transform: translate(-50%, 0)
       top: -60px  
       color: $light
     &__button
@@ -279,6 +279,11 @@
     &__policy-label
       font-size: 0.9rem
 @media screen and ( max-width: 320px )
+  .hero
+    padding: 0
+  .button
+    &--outline
+      margin-bottom: 0
   .header
     position: relative 
   .control
