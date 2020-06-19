@@ -357,13 +357,13 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
-  .input::-moz-placeholder {
+  .input--light::-moz-placeholder {
     color: #fff; }
-  .input:-ms-input-placeholder {
+  .input--light:-ms-input-placeholder {
     color: #fff; }
-  .input::-ms-input-placeholder {
+  .input--light::-ms-input-placeholder {
     color: #fff; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -430,10 +430,13 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
-    font-size: 1.42rem;
+    font-weight: normal;
+    font-size: 1.55rem;
     line-height: 2rem; }
   .section-title--left {
     text-align: left; }
+  .section-title--light {
+    color: #fff; }
   .section-title__word {
     display: flex;
     align-items: center; }
@@ -630,6 +633,9 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.projects {
+  padding-bottom: 30rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap;
@@ -692,6 +698,88 @@ img {
   margin-top: 0; }
   .section-title__heading1--primary {
     color: #E3B873; }
+
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -30rem; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4.428rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/video-mask.jpg") center no-repeat;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+  .control__video::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.control__text {
+  max-width: 40.785rem;
+  margin: auto;
+  margin-top: -0.5rem;
+  margin-bottom: 4.285rem;
+  text-align: center;
+  font-family: Futura Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 2.42rem; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    background-repeat: 30px; }
+
+.control__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__label {
+  margin-bottom: -7px; }
+
+.control__input {
+  font-family: Futura Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.28rem;
+  line-height: 1.71rem; }
+
+.control__button {
+  padding: 1.1857rem 4.1rem;
+  margin-right: 0.4rem;
+  font-family: Futura Demi;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.07rem;
+  line-height: 1.28rem; }
+
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .card__text {
   position: relative;
@@ -1003,6 +1091,8 @@ img {
       font-size: 1rem;
       line-height: 1.59rem;
       margin-bottom: 1.7rem; }
+  .projects {
+    padding-bottom: 30rem; }
   .swiper-slide {
     padding-bottom: 2.6rem; }
     .swiper-slide__text {
@@ -1045,6 +1135,8 @@ img {
       font-size: 1rem;
       line-height: 1.59rem;
       margin-bottom: 1.7rem; }
+  .projects {
+    padding-bottom: 30rem; }
   .swiper-slide {
     padding-bottom: 2.6rem; }
     .swiper-slide__text {
@@ -1068,3 +1160,51 @@ img {
     width: 100%; }
   .col-50 {
     width: 100%; } }
+
+@media screen and (max-width: 700px) {
+  .control {
+    background-color: #131313; }
+    .control__video {
+      max-width: 24.28rem;
+      min-height: 15.35rem;
+      background: #131313 url("../img/video-mask.jpg") center no-repeat;
+      margin-top: 2.8rem; }
+    .control__text {
+      color: #fff;
+      width: 340px;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      margin-top: -2.8rem;
+      margin-bottom: 2rem; }
+      .control__text::before {
+        margin-bottom: 1rem; }
+    .control__input {
+      margin-bottom: 4.3rem; }
+    .control__form {
+      justify-content: space-arround;
+      color: rgba(255, 255, 255, 0.5); }
+    .control__input-group {
+      flex-basis: 100%; }
+    .control__policy-label {
+      margin-top: -4.3rem;
+      justify-content: left;
+      position: relative;
+      top: -60px;
+      color: #fff; }
+    .control__button {
+      width: 24.28rem;
+      position: relative;
+      top: 45px; }
+  .section-title__heading {
+    margin-top: 68px; }
+  .input--dark::-moz-placeholder {
+    color: #fff; }
+  .input--dark:-ms-input-placeholder {
+    color: #fff; }
+  .input--dark::-ms-input-placeholder {
+    color: #fff; }
+  .input--dark::placeholder {
+    color: #fff; }
+  .video__play {
+    width: 4.64rem;
+    height: 4.64rem; } }

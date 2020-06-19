@@ -142,6 +142,8 @@
         font-size: 1rem
         line-height: 1.59rem
         margin-bottom: 1.7rem
+  .projects
+    padding-bottom: 30rem
   .swiper
     &-slide
       padding-bottom: 2.6rem
@@ -188,6 +190,8 @@
         font-size: 1rem
         line-height: 1.59rem
         margin-bottom: 1.7rem
+  .projects
+    padding-bottom: 30rem
   .swiper
     &-slide
       padding-bottom: 2.6rem
@@ -214,6 +218,53 @@
       width: 100%
     &-50
       width: 100%
+
+@media screen and ( max-width: 700px )
+  .control
+    background-color: $dark
+    &__video
+      max-width: 24.28rem
+      min-height: 15.35rem
+      background: $dark url('../img/video-mask.jpg') center no-repeat 
+      margin-top: 2.8rem
+      
+    &__text
+      color: $light
+      width: 340px
+      font-size: 1rem
+      line-height: 1.75rem
+      margin-top: -2.8rem
+      margin-bottom: 2rem
+      &::before
+        margin-bottom: 1rem
+    &__input
+      margin-bottom: 4.3rem
+    &__form
+      justify-content: space-arround
+      color: rgba(255, 255, 255, 0.5)
+    &__input-group
+      flex-basis: 100%
+    &__policy-label
+      margin-top: -4.3rem
+      justify-content: left
+      position: relative
+      top: -60px  
+      color: $light
+    &__button
+      width: 24.28rem
+      position: relative
+      top: 45px
+  .section-title
+    &__heading
+      margin-top: 68px
+  .input
+    &--dark
+      &::placeholder
+       color: $light
+  .video
+    &__play 
+      width: 4.64rem
+      height: 4.64rem
 
 
 
