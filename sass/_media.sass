@@ -233,7 +233,8 @@
       
     &__text
       color: $light
-      width: 340px
+      max-width: 24.2rem
+      width: 100%
       font-size: 1rem
       line-height: 1.75rem
       margin-top: -2.8rem
@@ -251,11 +252,16 @@
       margin-top: -4.3rem
       justify-content: left
       position: relative
+      left: 50%
+      transform: translate(-50%, 0)
       top: -60px  
       color: $light
     &__button
-      width: 24.28rem
+      max-width: 24.28rem
+      width: 100%
       position: relative
+      left: 50%
+      transform: translate(-50%, 0)
       top: 45px
   .section-title
     &__heading
@@ -268,7 +274,16 @@
     &__play 
       width: 4.64rem
       height: 4.64rem
-
+@media screen and ( max-width: 370px )
+  .control
+    &__policy-label
+      font-size: 0.9rem
+@media screen and ( max-width: 320px )
+  .header
+    position: relative 
+  .control
+    &__text
+      width: 100%
 
 
   

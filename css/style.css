@@ -761,7 +761,8 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 1.28rem;
-  line-height: 1.71rem; }
+  line-height: 1.71rem;
+  color: black; }
 
 .control__button {
   padding: 1.1857rem 3.8rem;
@@ -1175,7 +1176,8 @@ img {
       margin-top: 2.8rem; }
     .control__text {
       color: #fff;
-      width: 340px;
+      max-width: 24.2rem;
+      width: 100%;
       font-size: 1rem;
       line-height: 1.75rem;
       margin-top: -2.8rem;
@@ -1193,11 +1195,16 @@ img {
       margin-top: -4.3rem;
       justify-content: left;
       position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
       top: -60px;
       color: #fff; }
     .control__button {
-      width: 24.28rem;
+      max-width: 24.28rem;
+      width: 100%;
       position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
       top: 45px; }
   .section-title__heading {
     margin-top: 68px; }
@@ -1212,3 +1219,13 @@ img {
   .video__play {
     width: 4.64rem;
     height: 4.64rem; } }
+
+@media screen and (max-width: 370px) {
+  .control__policy-label {
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 320px) {
+  .header {
+    position: relative; }
+  .control__text {
+    width: 100%; } }
