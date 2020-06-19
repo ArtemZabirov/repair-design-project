@@ -54,4 +54,6 @@ $(document).ready(function () {
     spaceBetween: 2
 });
 
+  new WOW().init();
+
 });
