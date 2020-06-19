@@ -348,7 +348,8 @@ template {
 .label {
   font-size: 1.07rem; }
   .label--light {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: -0.1rem; }
 
 .input {
   background-color: transparent;
@@ -404,6 +405,34 @@ label.invalid {
 
 input.invalid {
   border-bottom: 1px solid tomato; }
+
+label#policyCheckbox-error {
+  margin-top: 2.5rem;
+  margin-left: 1rem; }
+
+label.invalid1 {
+  position: absolute;
+  color: tomato;
+  margin-top: 3.714rem; }
+
+input.invalid1 {
+  border-bottom: 1px solid tomato; }
+
+label#policyCheckbox1-error {
+  margin-top: 2.5rem;
+  margin-left: 16.8rem; }
+
+label.invalid2 {
+  position: absolute;
+  color: tomato;
+  margin-top: 3.714rem; }
+
+input.invalid2 {
+  border-bottom: 1px solid tomato; }
+
+label#policyCheckbox2-error {
+  margin-top: 2.5rem;
+  margin-left: 9.2rem; }
 
 .container {
   width: 85%;
@@ -946,9 +975,10 @@ img {
     .footer__input-group {
       display: flex;
       flex-direction: column;
-      flex-basis: 45%;
+      flex-basis: 44.5%;
       margin-bottom: 3.2rem; }
       .footer__input-group--full-width {
+        margin-top: 0.2rem;
         flex-basis: 100%;
         margin-bottom: 2rem; }
   .footer__policy {
@@ -961,7 +991,8 @@ img {
     font-style: normal;
     font-size: 1.07rem;
     line-height: 1.857rem;
-    padding: 1.1rem 4.3rem; }
+    padding: 1.1rem 4.3rem;
+    margin-top: -0.2rem; }
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }

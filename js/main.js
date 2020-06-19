@@ -71,7 +71,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: "required"
     }, // сообщения
     messages: {
       userName: {
@@ -82,12 +83,14 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
-      }
+      },
+      policyCheckbox: "Заполните поле"
+      
     }
   });
 
   $('.control__form').validate({
-    errorClass:"invalid",
+    errorClass:"invalid1",
     rules: {
       // строчное правило
       userName: {
@@ -99,6 +102,7 @@ $(document).ready(function () {
         required: true,
         minlength: 11
       },
+      policyCheckbox1: "required"
     }, 
     //сообщения
     messages: {
@@ -107,12 +111,16 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв "
       } ,
       userPhone: "Телефон обязателен",
-    }
+      policyCheckbox1: "Заполните поле"
+      
+  
+    },
+    
 
   });
 
   $('.footer__form').validate({
-    errorClass:"invalid",
+    errorClass:"invalid2",
     rules: {
       // строчное правило
       userName: {
@@ -127,7 +135,8 @@ $(document).ready(function () {
       // правило-объект (блок)
       userQuestion: {
         required: true
-      }
+      },
+      policyCheckbox2: "required"
     }, //сообщения
     messages: {
       userName: {
@@ -137,13 +146,14 @@ $(document).ready(function () {
       userPhone: "Телефон обязателен",
       userQuestion: {
         required: "Обязательно заполните поле",
-      }
+      },
+      policyCheckbox2: "Заполните поле"
     }
 
   });
 
   //маска для телефона
 
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(___)__-__-___"});
+  $('[type=tel]').mask('+7(000) 00-00-000');
 
 });
