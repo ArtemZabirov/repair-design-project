@@ -900,6 +900,18 @@ img {
     font-size: 0.92rem;
     line-height: 1rem; } }
 
+.footer-wrap {
+  background-color: #181818;
+  max-width: 63.07rem;
+  margin: auto;
+  padding: 2.5rem; }
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.428rem;
+  text-align: center; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -1187,7 +1199,8 @@ img {
         margin-bottom: 1rem; }
     .control__input {
       margin-bottom: 4.3rem;
-      color: #ffffff; }
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff; }
     .control__form {
       justify-content: space-arround;
       color: rgba(255, 255, 255, 0.5); }
@@ -1200,12 +1213,15 @@ img {
       top: -60px;
       color: #fff; }
     .control__button {
+      display: flex;
+      justify-content: center;
       max-width: 24.28rem;
       width: 100%;
       position: relative;
       left: 50%;
       transform: translate(-50%, 0);
-      top: 45px; }
+      top: 45px;
+      margin-right: 0; }
   .section-title__heading {
     margin-top: 68px; }
   .input--dark::-moz-placeholder {
