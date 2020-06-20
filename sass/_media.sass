@@ -233,7 +233,10 @@
       min-height: 15.35rem
       background: $dark url('../img/video-mask.jpg') center no-repeat 
       margin-top: 2.8rem
-      
+    &__policy
+      margin: unset
+      margin-top: 1.2rem
+      margin-bottom: 4.2rem
     &__text
       position: relative
       font-style: normal
@@ -255,22 +258,18 @@
       color: rgba(255, 255, 255, 0.5)
     &__input-group
       flex-basis: 100%
+      &:nth-child(2) input
+      margin-bottom: 15px
     &__policy-label
-      margin-right: 0
-      margin-top: -4.3rem
-      position: relative
-      top: -60px  
       color: $light
     &__button
       display: flex
       justify-content: center
       max-width: 24.28rem
       width: 100%
-      position: relative
-      left: 50%
-      transform: translate(-50%, 0)
-      top: 40px
-      margin-right: 0
+      margin: auto
+      margin-bottom: -24px
+      order: 1
   .section-title
     &__heading
       margin-top: 68px
@@ -316,6 +315,7 @@
     &__title
       margin-bottom: 3.8rem
     &__wrap
+      background: #181818
       margin-top: 0
       flex-basis: 100%
       max-width: 26.78rem 
@@ -342,6 +342,68 @@
         margin-top: -4rem
   .design
     padding-bottom: 0rem
+@media screen and ( max-width: 700px )
+  label
+    &.invalid
+      position: absolute
+      color: tomato
+      margin-top: 3.714rem
+  input
+    &.invalid
+      border-bottom: 1px solid tomato
+  label#policyCheckbox
+    &-error
+  label
+    &.invalid1
+      position: absolute
+      color: tomato
+      margin-top: 3.714rem
+  input
+    &.invalid1
+      border-bottom: 1px solid tomato
+  label#policyCheckbox1
+    &-error
+  label
+    &.invalid2
+      position: absolute
+      color: tomato
+      margin-top: 3.714rem
+  input
+    &.invalid2
+      border-bottom: 1px solid tomato
+  label#policyCheckbox2
+    &-error
+      margin-top: -1rem
+      margin-left: 1rem
+@media screen and ( max-width: 375px )
+  .footer
+    padding-bottom: 1rem
+    &__menu
+      margin-top: 2rem
+      display: none
+      padding: 0
+    &__map
+      display: flex
+      flex-flow: column wrap
+      margin-bottom: 5rem
+    &__image
+      order: 2
+    &__address
+      font-size: 1.29rem
+      line-height: 1.8rem  
+      margin-bottom: 3.2rem
+    &__insta
+      width: 2.78rem
+    &__mail
+      width: 2.78rem
+  .map-responsive
+    margin: 0
+    text-align: center
+    width: 100% 
+    height: 250px
+    margin-bottom: 2rem
+    
+    
 
 
 
