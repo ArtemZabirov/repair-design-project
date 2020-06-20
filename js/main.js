@@ -66,7 +66,10 @@ $(document).ready(function () {
         required: true,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 11
+      },
       // правило обьект (блок)
       userEmail: {
         required: true,
@@ -154,6 +157,15 @@ $(document).ready(function () {
 
   //маска для телефона
 
-  $('[type=tel]').mask('+7(000) 00-00-000');
+  $('[type=tel]').mask('+7(000) 000-00-00');
 
 });
+
+document.addEventListener('click', function(e) {
+  var map = document.querySelector('#map iframe')
+  if(e.target.id === 'map') {
+      map.style.pointerEvents = 'all'
+  } else {
+      map.style.pointerEvents = 'none'
+  }
+})
