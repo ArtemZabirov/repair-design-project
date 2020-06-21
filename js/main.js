@@ -92,7 +92,23 @@ $(document).ready(function () {
       },
       policyCheckbox: "Заполните поле"
       
-    }
+    },
+
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами в течении 10 минут')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
+        },
+        error: function (response) {
+          console.error('Ощибка запроса' + response);
+        }
+      });
+    } 
   });
 
   $('.control__form').validate({
@@ -125,7 +141,21 @@ $(document).ready(function () {
       
   
     },
-    
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами в течении 10 минут')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
+        },
+        error: function (response) {
+          console.error('Ощибка запроса' + response);
+        }
+      });
+    } 
 
   });
 
@@ -161,7 +191,24 @@ $(document).ready(function () {
         required: "Обязательно заполните поле",
       },
       policyCheckbox2: "Заполните поле"
-    }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами в течении 10 минут')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
+        },
+        error: function (response) {
+          console.error('Ощибка запроса' + response);
+        }
+      });
+    } 
+
+    
 
   });
 
