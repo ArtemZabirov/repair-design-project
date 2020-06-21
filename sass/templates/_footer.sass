@@ -1,7 +1,17 @@
 .footer
+  position: relative
   background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
   padding-top: 3rem
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
   &__wrap
+    position: relative
     background: $dark url('../img/bg-lines1.svg') no-repeat center 
     max-width: 63.07rem
     margin: auto
@@ -49,6 +59,7 @@
     padding: 1.1rem 4.3rem
     margin-top: -0.2rem
   &__menu
+    position: relative
     background-color: $dark
     padding: 4.285rem 0
   &__map
@@ -73,6 +84,7 @@
     margin-top: 1.14rem 
     margin-bottom: 1.857rem
   &__image
+     position: relative
      order: 2
      text-align: center
      margin-bottom: 3.071rem
@@ -86,12 +98,13 @@
     cursor: pointer
 .map-responsive
   overflow: hidden
-  padding-bottom: 50%
   position: relative
   height: 0
   filter: grayscale(1)
 #map
-  overflow: hidden
   height: 465px
   width: 100%
-  scroll: none
+#map ymaps:first
+  height: 465px
+  width: 100%
+  

@@ -160,12 +160,3 @@ $(document).ready(function () {
   $('[type=tel]').mask('+7(000) 000-00-00');
 
 });
-
-document.addEventListener('click', function(e) {
-  var map = document.querySelector('#map iframe')
-  if(e.target.id === 'map') {
-      map.style.pointerEvents = 'all'
-  } else {
-      map.style.pointerEvents = 'none'
-  }
-})
