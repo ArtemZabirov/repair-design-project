@@ -68,7 +68,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 11
+        minlength: 17
       },
       // правило обьект (блок)
       userEmail: {
@@ -82,7 +82,10 @@ $(document).ready(function () {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв"
       }, 
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Номер обязателен",
+        minlength: "Введите корректный номер"
+      },
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
@@ -103,7 +106,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 11
+        minlength: 17
       },
       policyCheckbox1: "required"
     }, 
@@ -113,7 +116,11 @@ $(document).ready(function () {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв "
       } ,
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Номер обязателен",
+        minlength: "Введите корректный номер"
+      },
+
       policyCheckbox1: "Заполните поле"
       
   
@@ -133,7 +140,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 11
+        minlength: 17
       },
       // правило-объект (блок)
       userQuestion: {
@@ -146,7 +153,10 @@ $(document).ready(function () {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв "
       } ,
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Номер обязателен",
+        minlength: "Введите корректный номер"
+      },
       userQuestion: {
         required: "Обязательно заполните поле",
       },
